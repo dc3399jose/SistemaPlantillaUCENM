@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Portal Académico UCENM";
+}
+
+<div class="text-center mt-5">
+    <div class="p-5 mb-4 bg-light rounded-3 shadow-sm border">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold text-primary">Sistema de Gestión de Proyectos</h1>
+            <p class="col-md-12 fs-4 text-muted">
+                Bienvenido al portal de Programación para Internet II.
+                Selecciona una de las herramientas a continuación para comenzar.
+            </p>
+            <hr class="my-4">
+            <div class="row g-4 mt-2">
+                <div class="col-md-6">
+                    <div class="card h-100 border-info shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-info">Trabajo 1: Planilla</h5>
+                            <p class="card-text">Cálculo de salarios finales, impuestos y clasificación de niveles salariales.</p>
+                            <a asp-controller="Planilla" asp-action="Index" class="btn btn-info text-white">Ir a Planilla</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100 border-success shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Trabajo 2: Préstamos</h5>
+                            <p class="card-text">Cotizador de préstamos personales con evaluación de riesgo financiero.</p>
+                            <a asp-controller="Prestamo" asp-action="Index" class="btn btn-success">Ir a Cotizador</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5 text-muted">
+        <p>Desarrollado por: Estudiante de Ingeniería en Sistemas - UCENM</p>
+        <p>Sede: Salama, Olancho</p>
+    </footer>
+</div>

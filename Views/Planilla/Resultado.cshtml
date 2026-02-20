@@ -1,0 +1,15 @@
+﻿@model SistemaPlanillaUCENM.Models.Empleado
+
+<div class="container mt-4">
+    <div class="alert alert-info">
+        <h3>Resumen para: @Model.Nombre</h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">Salario Bruto: <strong>L @Model.SalarioBruto</strong></li>
+        <li class="list-group-item text-danger">Impuesto: L @Model.Impuesto</li>
+        <li class="list-group-item list-group-item-success">Total a Recibir: L @Model.SalarioNeto</li>
+        <li class="list-group-item">Clasificación: <span class="badge bg-primary">@Model.Clasificacion</span></li>
+    </ul>
+    <br />
+    <a asp-action="Index" class="btn btn-outline-secondary">Volver al inicio</a>
+</div>

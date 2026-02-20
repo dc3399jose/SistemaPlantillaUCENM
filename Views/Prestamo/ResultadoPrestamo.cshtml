@@ -1,0 +1,21 @@
+﻿@model SistemaPlanillaUCENM.Models.Prestamo
+
+<div class="container mt-4">
+    <div class="card border-success">
+        <div class="card-header bg-success text-white">
+            <h4>Resultado de Cotización</h4>
+        </div>
+        <div class="card-body">
+            <h5>Cliente: @Model.Nombre</h5>
+            <hr />
+            <p>Interés Total: <strong>L @Model.InteresTotal.ToString("N2")</strong></p>
+            <p>Total a Pagar: <strong>L @Model.TotalPagar.ToString("N2")</strong></p>
+            <h3 class="text-success">Cuota Mensual: L @Model.CuotaMensual.ToString("N2")</h3>
+            <hr />
+            <h5>Nivel de Riesgo: <span class="badge bg-info text-dark">@Model.NivelRiesgo</span></h5>
+        </div>
+        <div class="card-footer">
+            <a asp-action="Index" class="btn btn-outline-secondary">Nueva Cotización</a>
+        </div>
+    </div>
+</div>
